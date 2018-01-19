@@ -11,6 +11,8 @@ Refer to [this tutorial](https://console.bluemix.net/docs/tutorials/serverless-a
 See [License.txt](License.txt) for license information.
 
 ---
+_German Version_
+
 # Inhaltsverzeichnis <a name="part99"></a>
 
 * [Beispiel: Realisierung einer einfachen Gästebuchanwendung mit IBM Functions](#part0)
@@ -26,7 +28,6 @@ See [License.txt](License.txt) for license information.
 * [3. Erstellen einer REST-API für die Sequenzen](#part10)
 * [4. Verwenden der Serverless API in einer WebAnwendung](#part11)
 * [5. Überwachen der IBM Functions Aktivitäten](#part12)
-
 
 ---
 
