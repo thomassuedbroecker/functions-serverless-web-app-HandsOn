@@ -11,13 +11,13 @@ Refer to [this tutorial](https://console.bluemix.net/docs/tutorials/serverless-a
 See [License.txt](License.txt) for license information.
 
 ---
-# Inhaltverzeichnis <a name="part99"></a>
+# Inhaltsverzeichnis <a name="part99"></a>
 
 * [Beispiel: Realisierung einer einfachen Gästebuchanwendung mit IBM Functions](#part0)
 * [Use Cases](#part1)
 * [Beispielanwendung Guestbook](#part2)
 * [Kommunikationsablauf](#part3)
-* [Vorausetzungen](#part4)
+* [Voraussetzungen](#part4)
 * [Schritte](#part5)
 * [1. Erstellen einer Cloudant Datenbank**](#part6)
 * [2. Erstellen von **Actions** und **Sequences**](#part7)
@@ -56,12 +56,12 @@ Das Ziel dieser Beispielanwendung ist es Ihnen die wichtigsten Punkte von IBM Fu
 2. Über **GitHub**, **Lokal** oder **Online** greift der Anwender auf die Gästebuchanwendung zu
 3. In der Gästebuchanwendung wird auf das Backend in **IBM Cloud Functions** mittels einer **REST API** zugegriffen
 4. Der **REST API** Request wird zu **IBM Cloud Functions** weitergeleitet
-5. Innerhalb von IBM Cloud Functions wird der API-Aufrufe als mittels **Sequences**, **Actions** und **Events** die Business Logik und die Zugriffe auf die Daten innerhalb einer **Cloudant Datenbank** umgesetzt.
+5. Innerhalb von **IBM Cloud Functions** werden die API-Aufrufe als mittels **Sequences**, **Actions** und **Events** die Business Logik und die Zugriffe auf die Daten innerhalb einer **Cloudant Datenbank** umgesetzt.
 
 ![Beispielanwendung](images/00_2_Kommunikation.png)
 
 ---
-# Vorausetzungen <a name="part4"></a>
+# Voraussetzungen <a name="part4"></a>
 [zurück zum Inhaltverzeichnis](#part99)
 
 Es muss ein **IBM Cloud Account** bestehen und ein **GitHub** Zugriff vorhanden sein.
@@ -71,9 +71,9 @@ Sie können Sich hier einen **IBM Cloud Account** erstellen: http://www.bluemix.
 # Schritte <a name="part5"></a>
 [zurück zum Inhaltverzeichnis](#part99)
 
-Folgende Schritte werden Sie durchführen, um diese Beispielanwendung **Online Gästebuch** zu instanzieren.
+Folgende Schritte werden Sie durchführen, um diese Beispielanwendung **Online Gästebuch** zu instanziieren.
 
-* Sie Klonen dieses GitHub Projekt auf Ihren Rechner
+* Sie klonen dieses GitHub Projekt auf Ihren Rechner
 ```js
     git clone https://github.com/cloud-dach/functions-serverless-web-app-hands-on.git
 ```
@@ -137,12 +137,13 @@ Die Aktionen werden in Sequenzen zusammengefasst.
 ### 2.1 Erstellen einer Sequenz von Aktionen um Datenbankeinträge zu speichern <a name="part8"></a>
 [zurück zum Inhaltverzeichnis](#part99)
 
-Die erste Sequenze dient dazu, die Nachricht eines Gastes zu speichern, mit Name, emailID und einem Kommentar.
-Es werden zwei Aktionen hierzu erzeugt werden.
+Die erste Sequenze dient dazu, den Gästebucheinträge eines Gastes zu speichern.
+Das Format enthält Name, emailID und einem Kommentar.
+Für die Speicherung der Gästebucheinträge werden zwei Aktionen erzeugt.
 
 Aktionen in der ersten Sequenz:
 
-   1. Erzeugen eines Dokumentes das gespeichert werden soll
+   1. Erzeugen eines Dokumentes, welches gespeichert werden soll
    2. Speichern der Dokumentes in der Cloudant NoSQL Databank.
 
 
@@ -177,7 +178,7 @@ Aktionen in der ersten Sequenz:
      };
     }
 ```
-* e) Nun fügen Sie die Aktion einer Sequenz hinzu links klicken Sie auf **Übergeordnete Sequenzen** und rechts zu **Sequenz hinzufügen**.
+* e) Nun fügen Sie die Aktion einer Sequenz hinzu. Links klicken Sie auf **Übergeordnete Sequenzen** und rechts zu **Sequenz hinzufügen**.
 
 ![Add action to sequence](images/10_select_sequence_prepare-entry-for-save-action.png)
 ![Add action to sequence](images/11_select_sequence_prepare-entry-for-save-action.png)
@@ -195,7 +196,7 @@ Aktionen in der ersten Sequenz:
 * i) Jetzt wählen Sie die Aktion **create-document** und **Neue Bindung** aus
 ![Configure sequence](images/16_configure_sequence_save-guestbook-entry-sequence.png)
 
-* k) Jetzt verwenden Sie den Cloudant Service **functions-guestbook-CloudantNoSQLDB** und die Datenbank **guestbook-db** die Sie zuvor erstellt haben. Selektieren diese und danach geben Sie der neuen Bindung den Namen **binding-for-guestbook** und schliessen mit Vorgang mit **Hinzuügen** ab.
+* k) Jetzt verwenden Sie den Cloudant Service **functions-guestbook-CloudantNoSQLDB** und die Datenbank **guestbook-db** die Sie zuvor erstellt haben, selektieren diese und danach geben Sie der neuen Bindung den Namen **binding-for-guestbook** und schliessen mit Vorgang mit **Hinzufügen** ab.
 
 ![Configure sequence](images/17_configure_sequence_save-guestbook-entry-sequence.png)
 
@@ -225,12 +226,12 @@ Die zweite Sequenz wird die Daten aus den bestehenden Gästebucheinträgen erhal
 * Formatieren der Einträge für die Ausgabe bzw. der Bereitstellung
 
 ---
-* a) Nun erstellen Sie eine neuen Node.JS Aktion mit dem namen **set-read-input**
+* a) Nun erstellen Sie eine neue Node.JS Aktion mit dem Namen **set-read-input**
 
 ![Create read-guestbook](images/22_create_sequence_read-guestbook-entries-sequence.png)
 ![Create read-guestbook](images/23_create_sequence_read-guestbook-entries-sequence.png)
 
-* Jetzt fügen folgenden Code ein Code ein
+* Fügen Sie folgenden Code ein
 ```js
     function main(params) {
       return {
@@ -251,7 +252,7 @@ Die zweite Sequenz wird die Daten aus den bestehenden Gästebucheinträgen erhal
 * e) Nun wird wieder eine vorbereitete Aktion für die Cloudant Datenbank verwendet. Hierzu wählen Sie **Hinzufügen** aus. Dann selektieren Sie **Öffentliche Aktion** verwenden und wählen **Cloudant** aus.
 ![Create read-guestbook](images/25_create_sequence_read-guestbook-entries-sequence.png)
 
-* f) In dem neuen Dialog wählen sie als Aktion **list-documents** aus und verwende die existierende Bindung **binding-for-guestbook** und wählen **Hinzufügen** aus
+* f) In dem neuen Dialog wählen sie als Aktion **list-documents** aus und verwenden die existierende Bindung **binding-for-guestbook** und wählen **Hinzufügen** aus
 ![Create read-guestbook](images/26_create_sequence_read-guestbook-entries-sequence.png)
 
 * g) Nun sehen Sie die beiden Aktionen innerhalb der Sequenz und speichern die Sequenz ab.
@@ -261,7 +262,7 @@ Die zweite Sequenz wird die Daten aus den bestehenden Gästebucheinträgen erhal
 
 * i) Benennen Sie die Aktion mit **format-entries** und wählen Sie **Erstellen & Hinzufügen**
 
-* j) Klicken Sie die Aktion **format-entries** an, um den folgende Code einzufügen und speicher die Aktion.
+* j) Klicken Sie die Aktion **format-entries** an, um den folgende Code einzufügen und speichern die Aktion.
 ```js
     const md5 = require('spark-md5');
 
@@ -279,7 +280,7 @@ Die zweite Sequenz wird die Daten aus den bestehenden Gästebucheinträgen erhal
 ```
 ![Create read-guestbook](images/28_create_sequence_read-guestbook-entries-sequence.png)
 
-* k) Gehen Sie zurück zu der Sequenz indem Sie auf **Aktionen** drücken
+* k) Gehen Sie zurück zu der Sequenz, indem Sie auf **Aktionen** drücken
 ![Create read-guestbook](images/29_create_sequence_read-guestbook-entries-sequence.png)
 
 * l) Öffnen Sie die Sequenz **read-guestbook-entries-sequence**
@@ -333,7 +334,7 @@ Aktion: **save-guestbook-entry-sequence action**
 * g) Speichern der REST-API mit **Speichern**
 ![API](images/38_API_sequences.png)
 
-* h) Gehen Sie aus **Defintion** und ändern die den Basispfad auf **/guestbook** und speichern Sie wieder die API.
+* h) Gehen Sie aus **Definition** und ändern die den Basispfad auf **/guestbook** und speichern Sie wieder die API.
 ![API](images/39_API_sequences.png)
 
 * i) Nun können Sie die URL sehen, auf mit der Sie Ihre API aufrufen können.
