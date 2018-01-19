@@ -30,7 +30,7 @@ See [License.txt](License.txt) for license information.
 
 ---
 
-# Beispiel: Realisierung einer einfachen Gästebuchanwendung mit IBM Functions <a name="part0"></a>
+# Realisierung einer einfachen Gästebuchanwendung mit IBM Functions <a name="part0"></a>
 
 [zurück zum Inhaltverzeichnis](#part99)
 
