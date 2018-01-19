@@ -29,27 +29,35 @@ See [License.txt](License.txt) for license information.
 
 
 ---
+
 # Beispiel: Realisierung einer einfachen Gästebuchanwendung mit IBM Functions <a name="part0"></a>
+
 [zurück zum Inhaltverzeichnis](#part99)
 
 Das Ziel dieser Beispielanwendung ist es Ihnen die wichtigsten Punkte von IBM Functions (**Serverless**) zu vermitteln.
 
 * Implementierung der **Business Logik** erfolgt mit Sequences und Actions
 * Die Integration zu der Datenbank **Cloudant** wird mittels bestehender **Event-Provider** realisiert
-* Um die Zugriffe einfach für die WebAnwendung bereitzustellen, wird eine **REST API** innerhalb von **IBM Cloud Functions** erstellt und über ein **API Gateway** zur Verfügung gestellt (die Anwendung kann in GitHub als einfache WebPage oder z.B. auf einem Node.JS Server in IBM Cloud laufen)
+* Um die Zugriffe einfach für die WebAnwendung bereitzustellen, wird eine **REST API** innerhalb von **IBM Cloud Functions** erstellt und über ein **API Gateway** zur Verfügung gestellt
+(die Anwendung kann in GitHub als einfache WebPage oder z.B. auf einem Node.JS Server in IBM Cloud laufen)
 
 ---
 ## Use Cases: <a name="part1"></a>
+
 [zurück zum Inhaltverzeichnis](#part99)
+
 ![UseCases](images/00_1_UseCases.png)
 
 ---
 ## Beispielanwendung Guestbook <a name="part2"></a>
+
 [zurück zum Inhaltverzeichnis](#part99)
+
 ![Beispielanwendung](images/00_2_Guestbook.png)
 
 ---
 ## Kommunikationsablauf <a name="part3"></a>
+
 [zurück zum Inhaltverzeichnis](#part99)
 
 1. Der Anwender ruft einen Browser auf seinem Device auf
