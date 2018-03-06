@@ -458,5 +458,5 @@ g) Nun ist Ihre Guestbook Webanwendung online und erzeugen einen Eintrag
 ## 4. Überwachen der IBM Functions Aktivitäten <a name="part12"></a>
 [zurück zum Inhaltverzeichnis](#part99)
 
-Nun können Sie alle  Aktivitäten Aktionen unter Überwachung einsehen.
+Nun können Sie alle  Aktivitäten Aktionen unter Überwachung der API in IBM Cloud Functions einsehen.
 ![WebAnwendung API](images/47_API_sequences.png)
