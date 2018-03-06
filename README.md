@@ -359,7 +359,8 @@ Aktion: **save-guestbook-entry-sequence action**
 ## 4. Verwenden der Serverless API in einer WebAnwendung <a name="part11"></a>
 [zurück zum Inhaltverzeichnis](#part99)
 
-Nun werden wir die WebAnwendung anpassen und dann **optional** auf IBM Cloud deployen.
+Nun werden wir die Guestbook WebAnwendung anpassen und lokal betreiben.
+Danach kann **optional** die Guestbook WebAnwendung auf IBM Cloud deployed werden.
 
 a) Passen sind die Datei auf ihrem Rechner **[IHR DOWNLOAD VERZEICHNIS]/public/js/guestbook.js** in einem Editor an.
 
@@ -394,7 +395,7 @@ e) In der API können Sie sofort die Auswertung der Nutzung Ihrer API sehen.
 ![WebAnwendung API](images/44_API_sequences.png)
 
 ---
-## 4.1 Optional: Deployn der Guestbook Applikation als Cloud Foundry Node.JS Applikation in IBM Cloud
+## 4.1 Optional: Deployen der Guestbook WebAnwendung als Cloud Foundry Node.JS Applikation
 
 _Optional für Mac oder Linux, wenn die Cloud Foundry Commandline installiert ist:_
 
