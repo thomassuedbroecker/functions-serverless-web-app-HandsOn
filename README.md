@@ -211,7 +211,7 @@ _Name des Binding:_   **binding-for-guestbook**
 
 _Cloudant Service:_   **functions-guestbook-CloudantNoSQLDB**
 
-_Datenbankname:_      **guestbook-db** 
+_Datenbankname:_      **guestbook-db**
 
 ![Configure sequence](images/17_configure_sequence_save-guestbook-entry-sequence.png)
 
@@ -324,7 +324,7 @@ Nun werden für die vorhanden Sequenzen REST-API über IBM Functions bereitgeste
 
 * c) Führen Sie die selben Schritte für die Sequenz **save-guestbook-entry-sequence sequence**
 
-* d) Geben Sie in einem neuen Browser Tab folgende URL ein: https://console.bluemix.net/openwhisk/apimanagement und wählen Sie OpenWhisk-API erstellen.
+* d) Geben Sie in einem neuen Browser Tab folgende URL ein: https://console.bluemix.net/openwhisk/apimanagement und wählen Sie **Cloud Functions-API** erstellen.
 ![API](images/33_API_sequences.png)
 
 * e) Nun benennen Sie den API-Namen mit **guestbook**
