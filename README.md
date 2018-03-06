@@ -384,7 +384,7 @@ const apiUrl = 'https://service.' + region + '.apiconnect.ibmcloud.com/gws/apiga
 ```
 b) Sie speichern die Datei ab.
 
-c) Nun öffnen Sie die Datei **[IHR DOWNLOAD VERZEICHNIS]/public/index.html** in Ihrem Verzeichnis mit einem Browser.
+c) Nun öffnen Sie die Datei **[IHR DOWNLOAD VERZEICHNIS]/public/index.html** in Ihrem Verzeichnis mit einem **Browser** z.B. _Chrome_.
 ![WebAnwendung API](images/42_API_sequences.png)
 
 d) Jetzt können Sie den Eintrag den Sie am Anfang als Test eingefügt haben in der WebSeite sehen.
