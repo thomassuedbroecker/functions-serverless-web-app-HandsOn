@@ -44,7 +44,7 @@ const guestbook = {
       if (!result.entries) {
         return;
       }
-
+      console.log('Entries... ', result);
       const context = {
         entries: result.entries
       }

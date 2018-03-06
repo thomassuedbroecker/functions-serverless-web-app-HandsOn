@@ -187,12 +187,12 @@ Aktionen in der ersten Sequenz:
      };
     }
 ```
-* e) Nun fügen Sie die Aktion einer Sequenz hinzu. Links klicken Sie auf **Übergeordnete Sequenzen** und rechts zu **Sequenz hinzufügen**.
+* e) Nun fügen Sie die Aktion einer Sequenz hinzu. Links klicken Sie auf **Übergeordnete Sequenzen** oder **Einbezogene Sequenzen** und rechts zu **Zu Sequenz hinzufügen**.
 
 ![Add action to sequence](images/10_select_sequence_prepare-entry-for-save-action.png)
 ![Add action to sequence](images/11_select_sequence_prepare-entry-for-save-action.png)
 
-* f) Jetzt geben Sie der Sequenz einen Namen **save-guestbook-entry-sequence** und speichern dies mit **Erstellen und Hinzufügen**
+* f) Jetzt geben Sie der Sequenz einen Namen **save-guestbook-entry-sequence** und speichern dies mit **Erstellen & Hinzufügen**
 ![Add action to sequence](images/12_select_sequence_prepare-entry-for-save-action.png)
 
 * g) Nun konfiguieren Sie die Sequenz in dem die eine vordefinierte Aktion hinzufügen werden. Klicken Sie auf die Sequenz **save-guestbook-entry-sequence** und wählen Sie **Hinzufügen** aus.
