@@ -187,7 +187,7 @@ Aktionen in der ersten Sequenz:
      };
     }
 ```
-* e) Nun fügen Sie die Aktion einer Sequenz hinzu. Links klicken Sie auf **Übergeordnete Sequenzen** oder **Einbezogene Sequenzen** und rechts zu **Zu Sequenz hinzufügen**.
+* e) Nun fügen Sie die Aktion einer Sequenz hinzu. Links klicken Sie auf **Übergeordnete Sequenzen** oder **Einbezogene Sequenzen** und rechts **Zu Sequenz hinzufügen**.
 
 ![Add action to sequence](images/10_select_sequence_prepare-entry-for-save-action.png)
 ![Add action to sequence](images/11_select_sequence_prepare-entry-for-save-action.png)
