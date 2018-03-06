@@ -207,6 +207,10 @@ Aktionen in der ersten Sequenz:
 
 * k) Jetzt verwenden Sie den Cloudant Service **functions-guestbook-CloudantNoSQLDB** und die Datenbank **guestbook-db** die Sie zuvor erstellt haben, selektieren diese und danach geben Sie der neuen Bindung den Namen **binding-for-guestbook** und schliessen mit Vorgang mit **Hinzufügen** ab.
 
+Name:               **binding-for-guestbook**
+Cloudant Service:   **functions-guestbook-CloudantNoSQLDB**
+Datenbank Name:     **guestbook-db** 
+
 ![Configure sequence](images/17_configure_sequence_save-guestbook-entry-sequence.png)
 
 * i) Es folgt das Speichern innerhalb der Sequenz mit **Speichern**
