@@ -366,8 +366,12 @@ a) Passen sind die Datei auf ihrem Rechner **[IHR DOWNLOAD VERZEICHNIS]/public/j
 ![WebAnwendung API](images/41_API_sequences.png)
 
 Hierzu entnehmen Sie aus der Route-URL der Guestbook API die **IBM Cloud Region** und die **API ID**.
+
 z.B.
-https://service. **eu** .apiconnect.ibmcloud.com/gws/apigateway/api/ **7b4af17c48f4e98c0917542a8648feda5610a9fb2fd7b9a75c2a50601da10aad** /guestbook und geben Sie diese in der Datei ein.
+
+https://service. **eu** .apiconnect.ibmcloud.com/gws/apigateway/api/ **7b4af17c48f4e98c0917542a8648feda5610a9fb2fd7b9a75c2a50601da10aad** /guestbook
+
+und geben Sie diese in der Datei ein.
 
 ```js
 /**
