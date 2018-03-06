@@ -394,7 +394,7 @@ e) In der API können Sie sofort die Auswertung der Nutzung Ihrer API sehen.
 ![WebAnwendung API](images/44_API_sequences.png)
 
 ---
-## 4.1 Optional: Erstellung einer Cloud Foundry Node.JS Applikation in IBM Cloud
+## 4.1 Optional: Deployn der Guestbook Applikation als Cloud Foundry Node.JS Applikation in IBM Cloud
 
 _Optional für Mac oder Linux, wenn die Cloud Foundry Commandline installiert ist:_
 
