@@ -451,7 +451,7 @@ Verbundene, Tailing-Protokolle (Liveanzeige der aktuellen letzten Protokollzeile
 f) Gehen Sie auf die URL https://console.bluemix.net/dashboard/apps in einem neuen Tab. Dort sehen Sie die hochgeladene Node.JS WebAnwendung und klicken Sie auf **Route**
 ![WebAnwendung API](images/45_API_sequences.png)
 
-g) Nun ist Ihre Function/Webanwendung online
+g) Nun ist Ihre Guestbook Webanwendung online und erzeugen einen Eintrag
 ![WebAnwendung API](images/46_API_sequences.png)
 
 ---
