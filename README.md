@@ -155,6 +155,7 @@ Aktionen in der ersten Sequenz:
    1. Erzeugen eines Dokumentes, welches gespeichert werden soll
    2. Speichern der Dokumentes in der Cloudant NoSQL Databank.
 
+![Functions](images/48_sequence-entry_guestbook.png)
 
 * a) In Funktionen öffnen Sie **Erstellung starten**
 
@@ -237,8 +238,11 @@ _Datenbankname:_      **guestbook-db**
 [zurück zum Inhaltverzeichnis](#part99)
 
 Die zweite Sequenz wird die Daten aus den bestehenden Gästebucheinträgen erhalten.
-* Listen aller EInträge aus der Datenbank
-* Formatieren der Einträge für die Ausgabe bzw. der Bereitstellung
+
+  1. Listen aller EInträge aus der Datenbank
+  2. Formatieren der Einträge für die Ausgabe bzw. der Bereitstellung für die WebAnwendung
+
+![Functions](images/49_sequence-get_entry_guestbook.png)
 
 ---
 * a) Nun erstellen Sie eine neue Node.JS Aktion mit dem Namen **set-read-input**
