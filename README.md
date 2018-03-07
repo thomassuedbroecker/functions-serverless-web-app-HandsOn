@@ -168,7 +168,7 @@ Aktionen in der ersten Sequenz:
 
 ![Create action Functions](images/09_create_prepare-entry-for-save-action.png)
 
-* d) In die erstellte Aktion fügen Sie folgenden Code ein
+* d) In die erstellte Aktion fügen Sie folgenden Code ein und speichern Sie den Code in der Aktion.
 
 ```js
     /**
